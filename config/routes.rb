@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get "/itens", to: "item#index"
   post "/itens/create", to: "item#create"
   post "/itens/multiple_creation", to: "item#bulk_create"
+  patch "/itens/check/:id", to: "item#check"
 end
